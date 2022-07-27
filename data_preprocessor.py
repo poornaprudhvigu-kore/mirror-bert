@@ -1,5 +1,6 @@
 import fasttext
 import random
+import sys
 
 class LanguageIdentification:
 
@@ -27,7 +28,8 @@ def translate_m2m(text, lang_id , trans_lang):
     tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
 
 if __name__ == "__main__":
-    df = pandas.read_csv("bquxjob_1c5b100e_1823e259be4.csv")
+    in_file = sys.argv[1]
+    df = pandas.read_csv(in_file)
     f = open("temp.txt", "w+")
     max_len = 5000
     min_len = 10
