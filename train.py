@@ -20,7 +20,7 @@ wandb.init(project="mirror-bert")
 
 # import from local
 from src.mirror_bert import MirrorBERT
-from src.data_loader import ContrastiveLearningDataset
+from src.data_loader_multi import ContrastiveLearningDataset
 from src.contrastive_learning import ContrastiveLearningPairwise
 from src.drophead import set_drophead
 
