@@ -25,7 +25,7 @@ def erase_and_mask(s, tokenizer, mask_len=5):
     # but interestingly this doesn't really hurt the model's performance
 
 class ContrastiveLearningDataset(Dataset):
-    def __init__(self, path, tokenizer, random_span_mask=0, pairwise=False): 
+    def __init__(self, path, tokenizer, random_span_mask=0, pairwise=True): 
         with open(path, 'r') as f:
             lines = f.readlines()
         self.sent_pairs = []
