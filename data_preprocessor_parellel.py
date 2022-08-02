@@ -74,7 +74,7 @@ if __name__ == "__main__":
                 if lang_id not in lang_list:
                     text = sent + '\n'
                 elif not trans_lang == "en":
-                    sent2 = translate_m2m(sent,lang_id=lang_id,trans_lang=trans_lang)
+                    sent2 = translate_m2m(sent,lang_id=lang_id,trans_lang=trans_lang)[0]
                     text = sent + " || " +sent2 +  '\n'
                 else:
                     text = sent + '\n'
