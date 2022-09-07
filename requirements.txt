@@ -6,4 +6,3 @@ scipy==1.6.2
 transformers==4.2.1
 scikit_learn==1.0
 wandb
-torch=="1.8.1+cu111" -f https://download.pytorch.org/whl/torch_stable.html
